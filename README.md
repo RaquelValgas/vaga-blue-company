@@ -2,12 +2,15 @@
 
 ## Telas e Funcionalidades
 
-### Tela de Splash Animada
-- [ ] Criação da Tela de Splash
+### Splash Animada
+- [X] Criação da Tela de Splash
 
 ### Sistema de Login
 - [ ] Criação da Tela de Login
 - [ ] Implementação de Autenticação de Login  
+
+### Home
+- [ ] Criação de Tela Home
 
 ### Carteirinha de Beneficiário Interativa
 - [ ] Criação da Tela de Carteirinha

@@ -1,16 +1,24 @@
-# vaga_blue_company
+# Desafio Blue Company
 
-A new Flutter project.
+## Telas e Funcionalidades
 
-## Getting Started
+### Tela de Splash Animada
+    - [] Criação da Tela de Splash
 
-This project is a starting point for a Flutter application.
+### Sistema de Login
+    - [] Criação da Tela de Login
+    - [] Implementação de Autenticação de Login  
 
-A few resources to get you started if this is your first Flutter project:
+### Carteirinha de Beneficiário Interativa
+    - [] Criação da Tela de Carteirinha
+    - [] Implementar interatividade de Frete e Verso
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Gráficos
+    - [] Criação da Tela de Gráfico
+    - [] Implementação do Gráfico de Rosca
+    - [] Implementação dos valores no grafico
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Teste Unitários
+    - [] Teste na tela de Login
+    - [] Teste na tela de Carteirinha
+    - [] Teste na tela de Gráficos

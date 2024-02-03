@@ -10,7 +10,7 @@
 - [ ] Implementação de Autenticação de Login  
 
 ### Home
-- [ ] Criação de Tela Home
+- [X] Criação de Tela Home
 
 ### Carteirinha de Beneficiário Interativa
 - [ ] Criação da Tela de Carteirinha

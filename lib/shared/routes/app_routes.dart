@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vaga_blue_company/presentation/home/home_page.dart';
+import 'package:vaga_blue_company/presentation/login/login_page.dart';
 import 'package:vaga_blue_company/presentation/splash/splash_page.dart';
 
 class AppRoutes {
@@ -11,7 +13,17 @@ class AppRoutes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppRoutes.splash:
-        return MaterialPageRoute(builder: (context) => const SplashPage());
+        return MaterialPageRoute(
+          builder: (context) => const SplashPage(),
+        );
+      case AppRoutes.login:
+        return MaterialPageRoute(
+          builder: (context) => const LoginPage(),
+        );
+      case AppRoutes.home:
+        return MaterialPageRoute(
+          builder: (context) => const HomePage(),
+        );
       default:
         return MaterialPageRoute(
           builder: (context) => const Scaffold(

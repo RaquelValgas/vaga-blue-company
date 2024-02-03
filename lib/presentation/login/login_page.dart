@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
                             borderSide: BorderSide(color: context.colors.blue2),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: context.colors.blue1),
+                            borderSide: BorderSide(color: context.colors.blue2),
                           ),
                           label: const Text('CPF'),
                         ),
@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide:
-                                  BorderSide(color: context.colors.blue1),
+                                  BorderSide(color: context.colors.blue2),
                             ),
                             label: const Text('Senha'),
                           ),
@@ -99,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                           height: 50,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: context.colors.blue2,
+                              backgroundColor: context.colors.grey,
                             ),
                             onPressed: _formSubmit,
                             child: Text(

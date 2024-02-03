@@ -6,7 +6,7 @@
 - [X] Criação da Tela de Splash
 
 ### Sistema de Login
-- [ ] Criação da Tela de Login
+- [X] Criação da Tela de Login
 - [ ] Implementação de Autenticação de Login  
 
 ### Home

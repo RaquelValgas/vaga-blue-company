@@ -40,43 +40,28 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Image.asset('./assets/images/logo.png'),
-            Padding(
-              padding: const EdgeInsets.all(30),
-              child: Form(
-                  key: _formKey,
-                  child: Container(
-                    constraints: BoxConstraints.expand(
-                      height: context.screenHeight,
-                      width: context.screenWidth,
-                    ),
-                    child: Column(children: [
-                      TextFormField(
-                        keyboardType: TextInputType.number,
-                        controller: cpfEc,
-                        validator: Validatorless.multiple([
-                          Validatorless.required("CPF Obrigátorio"),
-                          Validatorless.cpf("CPF inválido")
-                        ]),
-                        decoration: InputDecoration(
-                          labelStyle: TextStyle(color: context.colors.blue2),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: context.colors.blue2),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: context.colors.blue2),
-                          ),
-                          label: const Text('CPF'),
-                        ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 100),
+          child: Column(
+            children: [
+              Image.asset('./assets/images/logo.png'),
+              Padding(
+                padding: const EdgeInsets.all(30),
+                child: Form(
+                    key: _formKey,
+                    child: Container(
+                      constraints: BoxConstraints.expand(
+                        height: context.screenHeight,
+                        width: context.screenWidth,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 15),
-                        child: TextFormField(
-                          controller: passwordEc,
-                          validator:
-                              Validatorless.required("Senha Obrigatório"),
+                      child: Column(children: [
+                        TextFormField(
+                          keyboardType: TextInputType.number,
+                          controller: cpfEc,
+                          validator: Validatorless.multiple([
+                            Validatorless.required("CPF Obrigátorio"),
+                            Validatorless.cpf("CPF inválido")
+                          ]),
                           decoration: InputDecoration(
                             labelStyle: TextStyle(color: context.colors.blue2),
                             enabledBorder: OutlineInputBorder(
@@ -87,32 +72,53 @@ class _LoginPageState extends State<LoginPage> {
                               borderSide:
                                   BorderSide(color: context.colors.blue2),
                             ),
-                            label: const Text('Senha'),
-                          ),
-                          obscureText: true,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 15),
-                        child: SizedBox(
-                          width: double.infinity,
-                          height: 50,
-                          child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: context.colors.grey,
-                            ),
-                            onPressed: _formSubmit,
-                            child: Text(
-                              'Entrar',
-                              style: TextStyle(color: context.colors.blue1),
-                            ),
+                            label: const Text('CPF'),
                           ),
                         ),
-                      ),
-                    ]),
-                  )),
-            )
-          ],
+                        Padding(
+                          padding: const EdgeInsets.only(top: 15),
+                          child: TextFormField(
+                            controller: passwordEc,
+                            validator:
+                                Validatorless.required("Senha Obrigatório"),
+                            decoration: InputDecoration(
+                              labelStyle:
+                                  TextStyle(color: context.colors.blue2),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(color: context.colors.blue2),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(color: context.colors.blue2),
+                              ),
+                              label: const Text('Senha'),
+                            ),
+                            obscureText: true,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 15),
+                          child: SizedBox(
+                            width: double.infinity,
+                            height: 50,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: context.colors.grey,
+                              ),
+                              onPressed: _formSubmit,
+                              child: Text(
+                                'Entrar',
+                                style: TextStyle(color: context.colors.blue1),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ]),
+                    )),
+              )
+            ],
+          ),
         ),
       ),
     );

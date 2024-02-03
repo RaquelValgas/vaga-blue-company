@@ -7,7 +7,8 @@
 
 ### Sistema de Login
 - [X] Criação da Tela de Login
-- [ ] Implementação de Autenticação de Login  
+- [ ] Implementação de Autenticação de Login
+- [ ] Implementar senha visivel ou não
 
 ### Home
 - [X] Criação de Tela Home

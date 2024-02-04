@@ -14,8 +14,8 @@
 - [X] Criação de Tela Home
 
 ### Carteirinha de Beneficiário Interativa
-- [ ] Criação da Tela de Carteirinha
-- [ ] Implementar interatividade de Frete e Verso
+- [X] Criação da Tela de Carteirinha
+- [X] Implementar interatividade de Frete e Verso
 
 ### Gráficos
 - [ ] Criação da Tela de Gráfico

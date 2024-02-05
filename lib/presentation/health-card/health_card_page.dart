@@ -15,9 +15,11 @@ class _HealthCardPageState extends State<HealthCardPage> {
   String side = 'Verso';
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: context.colors.white,
-      child: Padding(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Carteirinha'),
+      ),
+      body: Padding(
         padding: const EdgeInsets.all(50),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

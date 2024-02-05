@@ -15,6 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
   final cpfEc = TextEditingController();
   final passwordEc = TextEditingController();
+  bool obscureText = true;
 
   @override
   void initState() {
@@ -74,6 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             label: const Text('CPF'),
                           ),
+                          cursorColor: context.colors.blue2,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 15),
@@ -93,8 +95,29 @@ class _LoginPageState extends State<LoginPage> {
                                     BorderSide(color: context.colors.blue2),
                               ),
                               label: const Text('Senha'),
+                              suffix: InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    obscureText = !obscureText;
+                                  });
+                                },
+                                child: !obscureText
+                                    ? Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 5, right: 11),
+                                        child: Icon(
+                                          Icons.visibility,
+                                          color: context.colors.blue2,
+                                        ))
+                                    : Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 5, right: 11),
+                                        child: Icon(Icons.visibility_off,
+                                            color: context.colors.blue2)),
+                              ),
                             ),
-                            obscureText: true,
+                            obscureText: obscureText,
+                            cursorColor: context.colors.blue2,
                           ),
                         ),
                         Padding(

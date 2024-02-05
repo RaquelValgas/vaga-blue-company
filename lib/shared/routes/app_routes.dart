@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaga_blue_company/presentation/graphic/graphics_page.dart';
 import 'package:vaga_blue_company/presentation/health-card/health_card_page.dart';
 import 'package:vaga_blue_company/presentation/home/home_page.dart';
 import 'package:vaga_blue_company/presentation/login/login_page.dart';
@@ -28,6 +29,10 @@ class AppRoutes {
       case AppRoutes.healthCard:
         return MaterialPageRoute(
           builder: (context) => const HealthCardPage(),
+        );
+      case AppRoutes.graphics:
+        return MaterialPageRoute(
+          builder: (context) => const GraphicsPage(),
         );
       default:
         return MaterialPageRoute(

@@ -18,9 +18,9 @@
 - [X] Implementar interatividade de Frete e Verso
 
 ### Gráficos
-- [ ] Criação da Tela de Gráfico
-- [ ] Implementação do Gráfico de Rosca
-- [ ] Implementação dos valores no grafico
+- [X] Criação da Tela de Gráfico
+- [X] Implementação do Gráfico de Rosca
+- [X] Implementação dos valores no grafico
 
 ### Teste Unitários
 - [ ] Teste na tela de Login
